@@ -1,5 +1,21 @@
-const icon__menu = document.querySelector('.icon__menu')
-const header = document.querySelector("header")
-icon__menu.addEventListener('click' , ()=>{
-    header.classList.toggle('active')
-})
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'vertical',
+    loop: true,
+  
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  });
